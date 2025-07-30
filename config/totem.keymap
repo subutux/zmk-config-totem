@@ -70,9 +70,9 @@ ZMK_ADAPTIVE_KEY(shift_repeat, bindings = <&sk LSHFT>; repeat {
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced"; tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>; tapping-term-ms = <200>;)
 
-ZMK_TRI_STATE(appswapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
-ZMK_TRI_STATE(winswapper, bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
-ZMK_TRI_STATE(tabswapper, bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
+ZMK_TRI_STATE(appswap, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
+ZMK_TRI_STATE(winswap, bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
+ZMK_TRI_STATE(tabswap, bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>; ignored-key-positions = <LT2 LT1 LT0 LM4 LM3 LM2 LM1>;)
 
 / {
 
