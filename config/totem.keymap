@@ -41,7 +41,7 @@
     tapping-term-ms = <220>;
     quick-tap-ms = <220>;
     hold-trigger-key-positions = <0>;
- };
+};
 
 #include "combos.dtsi"
 
@@ -124,7 +124,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
         &kp ESC     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &comma_morph &dot_morph &qexcl      &kp BSPC
                                             SPC_NAV     SMART_NUM   &none           &none       MAGIC_SHIFT &none
                             >;
-                    };
+                };
 
     // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -150,7 +150,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
         &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &kp ENTER   &trans
                                             &trans      &trans      &trans          &trans      &trans      &trans
                             >;
-                    };
+                };
 
     // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -176,7 +176,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
         &trans      &none       &none       &none       &none       &none          &kp ASTRK    &kp N1      &kp N2      &kp N3      &kp DOT     &trans
                                             &trans      &trans      &trans         &trans       &kp N0      &trans
                             >;
-                    };
+                };
 
     // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -202,7 +202,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
         &trans      &sys_reset  &out OUT_TOG &bt BT_PRV	&bt BT_NXT  &bt BT_CLR      &sys_reset  &kp F1      &kp F2      &kp F3      &kp F10     &trans
                                             &trans      &trans      &trans          &trans      &trans      &trans
                             >;
-                    };
-
+                };
+    }
     // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 };
