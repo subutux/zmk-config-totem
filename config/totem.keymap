@@ -41,7 +41,7 @@
     tapping-term-ms = <220>;
     quick-tap-ms = <220>;
     hold-trigger-key-positions = <0>;
-};
+ };
 
 #include "combos.dtsi"
 
@@ -70,7 +70,7 @@ ZMK_TRI_STATE(appswap, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;)
 ZMK_TRI_STATE(winswap, bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;)
 ZMK_TRI_STATE(tabswap, bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;)
 
-// Enable FUN layer if NAV and     are active
+// Enable FUN layer if NAV and NUM are active
 ZMK_CONDITIONAL_LAYER(fun_layer, NAV NUM, FUN)
 
 // Reset and bootload dongle
@@ -94,9 +94,6 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 SIMPLE_MORPH(lpar_lt, SFT, &kp LPAR, &kp LT)
 SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 
-// Tap: qmark | Shift + tap: excl.
-SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
-
 / {
     keymap {
             compatible = "zmk,keymap";
@@ -112,7 +109,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
     //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
     //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
     // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-    // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃   ? / !   ┃    BSPC   ┃
+    // ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃    BSPC   ┃
     // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
     //                                     ┃ SPACE/NAV ┃ SMART NUM ┃           ┃   ┃           ┃ MAG SHIFT ┃           ┃
     //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -121,7 +118,7 @@ SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
                     &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                     &kp A       &kp R       &kp S       &kp T       &kp G           &kp M       &kp N       &kp E       &kp I       &kp O
-        &kp ESC     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &comma_morph &dot_morph &qexcl      &kp BSPC
+        &kp ESC     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &comma_morph &dot_morph &kp FSLH      &kp BSPC
                                             SPC_NAV     SMART_NUM   &none           &none       MAGIC_SHIFT &none
                             >;
                 };
