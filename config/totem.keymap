@@ -16,6 +16,8 @@
 #define copy  &kp LG(C)
 #define paste &kp LG(V)
 
+#define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
+
 #define BASE 0
 #define NAV  1
 #define NUM  2
@@ -187,7 +189,7 @@ SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
     //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
     //             ┃   SHIFT   ┃   CTRL    ┃    ALT    ┃    GUI    ┃  VOL_DN   ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
     // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-    // ┃    ESC    ┃   RESET   ┃ USB | BLE ┃  BT PRV   ┃  BT NXT   ┃  BT CLR   ┃   ┃   RESET   ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃    BSPC   ┃
+    // ┃    ESC    ┃   RESET   ┃   BT 1    ┃    BT 2   ┃   BT 3    ┃  BT CLR   ┃   ┃   RESET   ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃    BSPC   ┃
     // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
     //                                     ┃ █████████ ┃ █████████ ┃           ┃   ┃           ┃ MAG SHIFT ┃           ┃
     //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -196,7 +198,7 @@ SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
 
                  &studio_unlock &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_UP    &none       &kp F7      &kp F8      &kp F9      &kp F12
                     &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &kp C_VOL_DN    &none       &kp F4      &kp F5      &kp F6      &kp F11
-        &trans      &sys_reset  &out OUT_TOG &bt BT_PRV	&bt BT_NXT  &bt BT_CLR      &sys_reset  &kp F1      &kp F2      &kp F3      &kp F10     &trans
+        &trans      &sys_reset                  _BT_SEL_KEYS_                       &sys_reset  &kp F1      &kp F2      &kp F3      &kp F10     &trans
                                             &trans      &trans      &trans          &trans      &trans      &trans
                             >;
                 };
