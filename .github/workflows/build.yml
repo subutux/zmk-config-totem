@@ -2,4 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
+    # Uses a fork
     uses: https://git.thuis.casa/stijn/zmk/.github/workflows/build-user-config.yml@main
+
