@@ -4,6 +4,8 @@
   <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
 </picture>
 
+Check the runner status: https://github.com/subutux/zmk-config-totem/actions/workflows/build.yml
+
 # ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
 [Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
