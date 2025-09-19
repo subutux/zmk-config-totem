@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: caksoylar # Status LED
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,10 @@ manifest:
       import: app/west.yml
     - name: zmk-tri-state
       remote: dhruvinsh
+      revision: main
+      # See: https://github.com/caksoylar/zmk-rgbled-widget
+    - name: zmk-rgbled-widget # Status LED
+      remote: caksoylar
       revision: main
   self:
     path: config
