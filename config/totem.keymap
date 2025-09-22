@@ -106,7 +106,7 @@
             bindings = <
         &kp ESC    &kp TAB    &appswap   &winswap       &tabswap     &kp PG_UP  &trans    &kp UP    &trans     &kp BSPC
         &sk LSHFT  &sk LCTRL  &sk LALT   &sk LGUI       &trans       &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(LS(Z))  &kp LG(V)    &kp CAPS   &trans    &trans    &trans     &kp ENTER  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(LS(Z))  &kp LC(V)    &kp CAPS   &trans    &trans    &trans     &kp ENTER  &trans
                               &trans     &trans         &trans       &none      &trans    &trans
             >;
         };
