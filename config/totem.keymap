@@ -130,9 +130,9 @@
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     *     ┃     (     ┃     )     ┃     -     ┃     =     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃   SHIFT   ┃   CTRL    ┃    ALT    ┃    GUI    ┃     ^     ┃   ┃     &     ┃     [     ┃     ]     ┃     `     ┃     \     ┃
+            //             ┃   SHIFT   ┃   CTRL    ┃  LFT ALT  ┃    GUI    ┃     ^     ┃   ┃     &     ┃     [     ┃     ]     ┃     `     ┃     \     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃    ESC    ┃           ┃           ┃           ┃     ~     ┃     |     ┃   ┃           ┃     {     ┃     }     ┃      :    ┃     ;     ┃    BSPC   ┃
+            // ┃    ESC    ┃           ┃           ┃  RGT ALT  ┃     ~     ┃     |     ┃   ┃           ┃     {     ┃     }     ┃      :    ┃     ;     ┃    BSPC   ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃    NAV    ┃   SHIFT   ┃    FUN    ┃   ┃           ┃   SPACE   ┃ █████████ ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┗━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -140,7 +140,7 @@
             bindings = <
         &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS  &kp EQUAL
         &sk LSHFT  &sk LCTRL  &sk LALT  &sk LGUI   &kp CARET    &kp AMPS   &kp LBKT  &kp RBKT  &kp GRAVE  &kp BSLH
-&trans  &trans     &trans     &trans    &kp TILDE  &kp PIPE     &trans     &kp LBRC  &kp RBRC  &kp COLON  &kp SEMI   &trans
+&trans  &trans     &trans     &sk RALT   &kp TILDE  &kp PIPE     &trans     &kp LBRC  &kp RBRC  &kp COLON  &kp SEMI   &trans
                               &trans    &trans     &trans       &none      &trans    &trans
             >;
         };
